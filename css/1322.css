@@ -4,7 +4,421 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "PT Sans", "Arial", sans-serif;
+    min-width: 960px;
+}
+
+.btn-call {
+    padding: 13px 35px;
+    font-size: 16px;
+    width: 175px;
+    background-color: #ffe184;
+}
+
+.page-header a,
+.page-header li,
+.page-footer li{
+    text-decoration: none;
+    color: #000;
+}
+
+.main-nav li {
+    font-size: 16px;
+    line-height: 75px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav li:last-child {
+    margin-right: 0;
+    width: 190px;
+}
+
+.logo {
+    display: block;
+    float: left;
+    margin: 0;
+    line-height: 75px;
+    height: 75px;
+    width: 180px;
+}
+
+.logo span {
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .container {
     margin: 0 auto;
-    width: 975px;
+    width: 960px;
+    padding: 0 10px;
+}
+
+.page-header,
+.page-footer{
+    background-color: #ffcd34;
+    height: 75px;
+}
+
+.main-nav {
+    float: right;
+    vertical-align: middle;
+}
+
+.main-nav ul{
+    margin: 0;
+}
+
+.call {
+    background-color: #202e3b;
+}
+
+.column {
+    display: inline-block;
+    width: 216px;
+    vertical-align: middle;
+    margin: 0;
+    margin-right: 20px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.column p {
+    position: relative;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.column-1 p:before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 42px;
+    height: 40px;
+    background-image: url("../img/Rectangle%201%20copy.png");
+    background-repeat: no-repeat;
+}
+
+.column-2 p:before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    background-image: url("../img/Ellipse_1.png");
+    background-repeat: no-repeat;
+}
+
+.column-3 p:before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 42px;
+    height: 40px;
+    background-image: url("../img/Rounded_Rectangle_1_copy.png");
+    background-repeat: no-repeat;
+}
+
+.column-4 p:before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 42px;
+    height: 40px;
+    background-image: url("../img/Rounded_Rectangle_1_copy_2.png");
+    background-repeat: no-repeat;
+}
+
+.column-4 {
+    margin-right: 0;
+}
+
+.container p {
+    margin-top: 0;
+}
+
+.main-menu {
+    margin: 0;
+}
+
+.promo {
+    background-image: url("/img/1390641675_ekskavator-gusenichnyy-hyundai-380.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    padding-top: 140px;
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.promo:before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    background-image: url("../img/Rectangle_5.png");
+}
+
+.promo:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(135deg, #ffcd34 35%, black 35%, black 60%, #FFCD34 60%);
+    background-size: 20px 20px;
+}
+
+.promo-title {
+    margin-top: 0;
+    font-size: 44px;
+    font-weight: bold;
+    padding-top: 0;
+    margin-bottom: 15px;
+}
+
+.promo p {
+    width: 615px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.btn-catalog {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #ffcd34;
+    font-size: 18px;
+    position: relative;
+    width: 220px;
+    height: 45px;
+    padding-top: 6px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.btn-catalog:before {
+    content: "";
+    top: 11px;
+    right: 27px;
+    position: absolute;
+    width: 13px;
+    height: 19px;
+    background-image: url("../img/Forma%201.png");
+}
+
+.call {
+    padding: 40px 0;
+    font-size: 0;
+}
+
+.call p {
+    color: #ffcd34;
+    margin: 0 0 40px 0;
+    font-size: 24px;
+}
+
+.call input {
+    border: 2px solid #ffcd34;
+    width: 220px;
+    height: 45px;
+    margin-right: 20px;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.call input:focus {
+    outline: 0;
+}
+
+.call input[type=submit] {
+    background-color: #ffcd34;
+    margin-right: 0;
+    color: #000;
+    padding: 0;
+}
+
+.about {
+    background-color: #fff;
+    padding: 47px 0;
+}
+
+.about .container {
+    font-size 0;
+}
+
+.technic {
+    background-color: #f3f3f3;
+    font-size: 0;
+    padding-top: 46px;
+}
+
+.technic h2 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.technic-menu {
+    display: inline-block;
+    vertical-align: top;
+    width: 245px;
+    padding: 0;
+    margin: 0;
+}
+
+.technic-menu ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 38px;
+    margin-bottom: 54px;
+}
+
+.technic-menu li {
+    list-style: none;
+}
+
+.technic-menu a {
+    font-size: 16px;
+    color: #202e3b;
+    line-height: 38px;
+}
+
+.technic-price {
+    display: inline-block;
+    vertical-align: top;
+    width: 695px;
+    padding: 0;
+    margin: 0;
+}
+
+.technic-price table {
+    margin-top: 35px;
+}
+
+.technic-price th {
+    font-size: 16px;
+    background-color: #dfdfdf;
+    height: 36px;
+    text-align: left;
+}
+
+.technic-price td {
+    height: 36px;
+    font-size: 16px;
+}
+
+.technic-price td {
+    height: 36px;
+}
+
+.technic-price td:first-child,
+.technic-price th:first-child{
+    width: 288px;
+}
+
+.technic-price td:nth-child(2),
+.technic-price th:nth-child(2){
+    width: 125px;
+}
+
+.technic-price td:nth-child(3),
+.technic-price th:nth-child(3){
+    width: 135px;
+}
+
+.technic-price td:last-child,
+.technic-price th:last-child{
+    width: 154;
+}
+
+.technic-price tr:nth-child(2n-1){
+    background-color: #fff;
+}
+
+.statistic{
+    background-color: #202e3b;
+}
+
+.info{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 320px;
+    vertical-align: top;
+    clear: both;
+}
+
+.info-list{
+}
+
+.recall{
+    display: inline-block;
+    width: 600px;
+    vertical-align: top;
+}
+
+.about-recall-item img{
+    float: left;
+    margin-bottom: 20px;
+}
+
+.about-recall-item-1{
+    margin-bottom: 20px;
+}
+
+.map{
+    height: 515px;
+    position: relative;
+}
+
+.map:before{    
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    background-image: url("../img/Rectangle_5.png");
+}
+
+.logo-footer{
+    border-color: #000;
+}
+
+.page-footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-footer span,
+.page-footer .btn-call{
+    color: #ffcd34;
+}
+
+.page-footer .btn-call{
+    background-color: transparent;
+}
+
+.page-footer{
+    background-color: #202e3b;
 }
