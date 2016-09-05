@@ -1,0 +1,80 @@
+.container{
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #ffcd34;
+    font-size: 0;
+}
+
+.header-logo{
+    display: inline-block;
+    line-height: 75px;
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 120px;
+}
+
+.header-logo img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.main-nav{
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: top;
+    padding-right: 0;
+}
+
+.main-menu>li{
+    display: inline-block;
+    line-height: 75px;
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+    margin-right: 6px;
+}
+
+.main-menu li:last-child{
+    margin-right: 0px;
+}
+
+.main-menu a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    line-height: 0;
+    padding: 20px 15px 15px;
+}
+
+.main-menu a:hover{
+    border: 2px solid  #bc9d36;
+}
+
+.main-menu a:focus{
+    border: 2px solid  #796e38;
+}
+
+.btn-call{
+    background-color: #ffe184;
+}
+
+.btn-call:hover{
+    background-color: #ffecb2;
+}
+
+.btn-call:focus{
+    background-color: #f6bf16;
+}
+
+
+
+
