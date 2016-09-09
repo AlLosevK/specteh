@@ -22,6 +22,10 @@ body {
     margin: 0 auto;
 }
 
+.clearfix {
+    overflow: auto;
+}
+
 
 /* ..............................................Хэдер и Футер.............................................*/
 
@@ -161,7 +165,8 @@ footer .main-menu a:focus {
     position: absolute;
     width: 100%;
     height: 14px;
-    background-image: url("../img/Rectangle_5.png");
+    background-image: linear-gradient(135deg, #ffcd34 35%, black 35%, black 60%, #FFCD34 60%);
+    background-size: 20px 18px;
 }
 
 .promo:after {
@@ -172,7 +177,7 @@ footer .main-menu a:focus {
     left: 0;
     bottom: 0;
     background-image: linear-gradient(135deg, #ffcd34 35%, black 35%, black 60%, #FFCD34 60%);
-    background-size: 20px 20px;
+    background-size: 20px 18px;
 }
 
 .promo-title {
@@ -709,7 +714,7 @@ footer .main-menu a:focus {
     background-color: #ffcd34;
 }
 
-.example-about a:after{
+.example-about a:after {
     content: "";
     top: 11px;
     right: 14px;
@@ -725,7 +730,7 @@ footer .main-menu a:focus {
     padding-top: 40px;
 }
 
-.call-port p{
+.call-port p {
     margin-bottom: 35px;
 }
 
@@ -739,10 +744,488 @@ footer .main-menu a:focus {
     background-image: url("../img/Rectangle_5.png");
 }
 
-.about-port{
+.about-port {
     padding-top: 40px;
 }
 
-.about-port p:before{
+.about-port p:before {
     top: 5px;
+}
+
+
+/*********************************************************************************************************************************************************Сontacts*************************************************************/
+
+.call-cont {
+    background-image: url("../img/call-cont-bcgi.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.cont-title {
+    color: #ffcd34;
+    display: inline-block;
+    line-height: 119px;
+    font-size: 26px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.call-cont p {
+    display: inline-block;
+    line-height: 119px;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    margin-right: 303px;
+}
+
+.call-cont:before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    background-image: linear-gradient(135deg, #ffcd34 35%, black 35%, black 60%, #FFCD34 60%);
+    background-size: 20px 18px;
+}
+
+.get-consult-cont {
+    display: inline-block;
+    line-height: 119px +;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    padding: 7px 20px 14px;
+    background-color: #ffcd34;
+}
+
+.contacts {
+    padding-top: 40px;
+    background: #f3f3f3;
+}
+
+.map-adress {
+    display: inline-block;
+    width: 65%;
+    height: 400px;
+    border: 1px solid #d5d5d5;
+    margin-bottom: 42px;
+}
+
+.contacts-info {
+    float: right;
+    width: 32%;
+    margin-bottom: 42px;
+}
+
+.contacts-info p {
+    display: block;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.contacts-info .phone,
+.contacts-info .email {
+    font-size: 18px;
+    height: 40px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.contacts-info .phone {
+    margin-top: -10px;
+}
+
+.contacts-info .email {
+    margin-bottom: 10px;
+}
+
+.contacts-info input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.contacts-info textarea {
+    margin: 0;
+}
+
+.contacts-info button {
+    background: #354b60;
+    font-size: 18px;
+    width: 100%;
+    min-height: 45px;
+}
+
+.review-main {
+    padding-top: 27px;
+}
+
+.review-main .title {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+
+.review-main .review {
+    display: inline-block;
+    width: 215px;
+    margin-right: 2.25%;
+    margin-bottom: 62px;
+    text-align: center;
+}
+
+.review-main .review-4 {
+    margin-right: 0;
+}
+
+.review img {
+    margin-bottom: 17px;
+}
+
+.review blockquote {
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.review cite {
+    font-size: 14px;
+    color: #202e3b;
+    font-weight: bold;
+}
+
+
+/*
+.contacts-info .phone:before{
+    content: "";
+    position: absolute;
+    top: 1;
+    left: 1;
+    height: 20px;
+    width: 20px;
+    background-image: url(../img/call-cont-phone-icon.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+}
+
+.contacts-info .email:before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url("../img/call-cont-email-icon.png");
+    -webkit-background-size: 23px 17px;
+    background-size: 23px 17px;
+}
+*/
+
+
+/*************************************************************************************************************************************************************Католог**********************************************************/
+
+.catolog-consult {
+    background-image: url(../img/catolog-consult.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 55px;
+    padding-bottom: 45px;
+}
+
+.catolog-consult-info {
+    display: block;
+    float: left;
+    width: 605px;
+}
+
+.catolog-consult-title {
+    color: #ffcd34;
+    font-size: 26px;
+    margin: 0;
+    margin-bottom: 11px;
+}
+
+.catolog-consult-about {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+
+.zakaz {
+    float: right;
+    width: 242px;
+}
+
+.catolog-cons {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 22px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 14px;
+    background-color: #ffcd34;
+    display: block;
+}
+
+.catalog-consult-council {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.catolog {
+    background-color: #f3f3f3;
+    padding: 0;
+    padding-top: 25px;
+}
+
+.catalog-asside {
+    display: block;
+    float: left;
+    width: 222px;
+}
+
+.catolog-title {
+    margin: 0;
+    display: block;
+    clear: both;
+    margin-bottom: 29px;
+    padding-left: 47px;
+}
+
+.catolog-technic {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+.catolog-technic a {
+    color: #353535;
+}
+
+.catolog-technic li {
+    margin-bottom: 18px;
+}
+
+.downlowd {
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #354b60;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-item {
+    width: 242px;
+    height: 342px;
+    margin: auto auto;
+}
+
+.catolog-items {
+    display: block;
+    float: right;
+    width: 620px;
+}
+
+.catolog-items div:nth-last-of-type(2) {
+    margin-bottom: 50px;
+}
+
+.catolog-item,
+.discount-item {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 34px;
+}
+
+.catolog-item-1 {
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.catolog-item-2 {
+    display: block;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.catolog-item-3 {
+    display: block;
+    float: left;
+}
+
+.catolog-item-4 {
+    display: block;
+    float: right;
+}
+
+.item-title,
+.discount-item-title {
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    font-weight: bold;
+    padding-bottom: 32px;
+    width: 200px;
+}
+
+.item-photo,
+.discount-item-photo {
+    padding-bottom: 25px;
+    margin-left: 15px;
+}
+
+.item-price,
+.discount-item-price {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+.item-price span {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.catolog-rent,
+.item-more,
+.discount-catolog-rent,
+.discount-item-more {
+    width: 120px;
+    height: 36px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.catolog-rent,
+.discount-catolog-rent {
+    background-color: #f3c331;
+    color: #fff;
+    font-size: 16px;
+}
+
+.item-more,
+.discount-item-more {
+    background-color: #354b60;
+    color: #fff;
+    font-size: 16px;
+}
+
+.catolog-paginator {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0;
+    width: 120px;
+    height: 22px;
+    vertical-align: middle;
+    text-align: center;
+    clear: both;
+    margin-bottom: 46px;
+}
+
+.catolog-paginator a {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    font-size: 16px;
+    margin-right: 9px;
+    width: 21px;
+    height: 21px;
+    color: #353535;
+    text-decoration: none;
+}
+
+.catolog-paginator a:last-child {
+    margin-right: 0;
+}
+
+.catolog-paginator a:focus {
+    background-color: #354b60;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.discounts {
+    background-image: url(../img/discount-bgi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+    padding-bottom: 50px;
+}
+
+.discounts-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.discount-item {
+    padding-top: 17px;
+    position: relative;
+}
+
+.discount-item-1 {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.discount-item-1 .discount-item-title:after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    background-image: url("../img/catolog-sale.png");
+    background-repeat: no-repeat;
+}
+
+.discount-item-2 {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.discount-item-3 {
+    display: block;
+    float: left;
+}
+
+.discount-item-photo {
+    padding-bottom: 35px;
+}
+
+.new-price {
+    text-decoration: line-through;
+    color: #d12222;
+    font-size: 22px;
+    margin-right: 17px;
 }
