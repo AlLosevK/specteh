@@ -45,11 +45,11 @@ footer {
     color: #000;
     text-decoration: none;
     font-size: 24px;
-    margin-right: 115px;
+    margin-right: 109px;
 }
 
 .footer-logo {
-    margin-right: 106px;
+    margin-right: 100px;
 }
 
 .header-logo img,
@@ -61,6 +61,7 @@ footer {
 
 .main-menu {
     margin: 0;
+    padding: 0;
 }
 
 .main-nav {
@@ -182,12 +183,10 @@ footer .main-menu a:focus {
 
 .promo-title {
     width: 615px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     font-weight: normal;
-    margin-bottom: 30px;
     font-size: 20px;
     padding-top: 0;
-    margin-top: 0;
 }
 
 .promo p {
@@ -195,7 +194,6 @@ footer .main-menu a:focus {
     font-size: 44px;
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: 0;
     margin-bottom: 8px;
 }
 
@@ -206,10 +204,8 @@ footer .main-menu a:focus {
     border: 2px solid #ffcd34;
     font-size: 18px;
     position: relative;
-    width: 220px;
-    height: 45px;
-    padding-top: 6px;
-    padding-left: 15px;
+    padding: 9px 17px;
+    padding-right: 53px;
     text-align: left;
 }
 
@@ -217,14 +213,14 @@ footer .main-menu a:focus {
     border: 2px solid #ffd966;
 }
 
-.btn-catalog:hover {
+.btn-catalog:focus {
     border: 2px solid #ffe390;
 }
 
 .btn-catalog:before {
     content: "";
-    top: 11px;
-    right: 27px;
+    top: 14px;
+    right: 30px;
     position: absolute;
     width: 13px;
     height: 19px;
@@ -234,14 +230,14 @@ footer .main-menu a:focus {
 .call {
     background-color: #202e3b;
     padding: 0;
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 40px;
     font-size: 0;
 }
 
 .call p {
     color: #ffcd34;
-    margin: 0 0 40px 0;
+    margin: 0 0 35px 0;
     font-size: 24px;
 }
 
@@ -418,45 +414,33 @@ footer .main-menu a:focus {
 
 .technic-price table {
     margin-top: 30px;
+    width: 100%;
     border-collapse: collapse;
 }
 
 .technic-price th {
     font-size: 16px;
+    padding: 8px 0;
     background-color: #dfdfdf;
-    height: 36px;
     text-align: left;
+    vertical-align: top;
 }
 
 .technic-price td {
-    height: 36px;
     font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    padding: 8px 0;
 }
 
 .technic-price td {
-    height: 36px;
+    text-align: left;
+    vertical-align: top;
 }
 
 .technic-price td:first-child,
 .technic-price th:first-child {
-    width: 288px;
-    padding: 0;
     padding-left: 14px;
-}
-
-.technic-price td:nth-child(2),
-.technic-price th:nth-child(2) {
-    width: 125px;
-}
-
-.technic-price td:nth-child(3),
-.technic-price th:nth-child(3) {
-    width: 135px;
-}
-
-.technic-price td:last-child,
-.technic-price th:last-child {
-    width: 154px;
 }
 
 .technic-price tr:nth-child(2n-1) {
@@ -581,7 +565,7 @@ footer .main-menu a:focus {
     height: 120px;
 }
 
-.portfolio h3 {
+.portfolio h2 {
     color: #ffcd34;
     margin: 0;
     display: inline-block;
@@ -605,7 +589,8 @@ footer .main-menu a:focus {
     font-size: 16px;
     margin-right: 40px;
     color: #fff;
-    line-height: 120px;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .portfolio li:last-child {
@@ -631,8 +616,7 @@ footer .main-menu a:focus {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding-top: 111px;
-    height: 510px;
+    padding: 111px 0 152px 0;
 }
 
 .example-1 {
@@ -832,6 +816,7 @@ footer .main-menu a:focus {
 .contacts-info .email {
     font-size: 18px;
     height: 40px;
+    position: relative;
     padding-left: 40px;
     font-weight: bold;
 }
@@ -904,20 +889,18 @@ footer .main-menu a:focus {
 }
 
 
-/*
+
 .contacts-info .phone:before{
     content: "";
     position: absolute;
-    top: 1;
-    left: 1;
+    top: 0;
+    left: 0;
     height: 20px;
     width: 20px;
     background-image: url(../img/call-cont-phone-icon.png);
-    background-repeat: no-repeat;
-    -webkit-background-size: 20px 20px;
-    background-size: 20px 20px;
+    
 }
-
+/*
 .contacts-info .email:before{
     content: "";
     top: 0;
@@ -1013,10 +996,29 @@ footer .main-menu a:focus {
 
 .catolog-technic a {
     color: #353535;
+    position: relative;
 }
 
 .catolog-technic li {
     margin-bottom: 18px;
+}
+
+.catolog-technic .active{
+    padding-left: 30px;
+    position: relative;
+    color: #353535;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.catolog-technic .active:before{
+    content:"";
+    position: absolute;
+    background-image: url(../img/catalog-arrow-black.png);
+    width: 7px;
+    height: 11px;
+    top: 0;
+    left: 0;
 }
 
 .downlowd {
@@ -1042,17 +1044,14 @@ footer .main-menu a:focus {
 }
 
 .catolog-items div:nth-last-of-type(2) {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .catolog-item,
 .discount-item {
-    width: 300px;
-    height: 400px;
     margin: 0;
     background-color: #fff;
-    padding-top: 25px;
-    padding-bottom: 34px;
+    padding: 27px 25px;
 }
 
 .catolog-item-1 {
@@ -1166,7 +1165,7 @@ footer .main-menu a:focus {
     margin-right: 0;
 }
 
-.catolog-paginator a:focus {
+.catolog-paginator .active {
     background-color: #354b60;
     color: #fff;
     border-radius: 5px;
@@ -1176,7 +1175,7 @@ footer .main-menu a:focus {
     background-image: url(../img/discount-bgi.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 40px 0;
+    padding: 35px 0;
     padding-bottom: 50px;
 }
 
@@ -1185,18 +1184,21 @@ footer .main-menu a:focus {
     font-weight: bold;
     color: #ffffff;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .discount-item {
     padding-top: 17px;
     position: relative;
+    padding-right: 30px;
+    padding-bottom: 33px;
+    margin-right: 20px;
+    
 }
 
 .discount-item-1 {
     display: block;
     float: left;
-    margin-right: 20px;
 }
 
 .discount-item-1 .discount-item-title:after {
@@ -1211,12 +1213,12 @@ footer .main-menu a:focus {
 .discount-item-2 {
     display: block;
     float: left;
-    margin-right: 20px;
 }
 
 .discount-item-3 {
     display: block;
     float: left;
+    margin-right: 0;
 }
 
 .discount-item-photo {
