@@ -266,7 +266,7 @@ footer .main-menu a:focus {
 
 .call input[type=submit]:hover {
     background-color: #ffd966;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .call input[type=submit]:focus {
@@ -1003,21 +1003,23 @@ footer .main-menu a:focus {
     margin-bottom: 18px;
 }
 
-.catolog-technic .active{
-    padding-left: 30px;
+.catolog-technic .active,
+.active{
+    padding-left: 20px;
     position: relative;
     color: #353535;
     text-decoration: none;
     font-weight: bold;
 }
 
-.catolog-technic .active:before{
+.catolog-technic .active:before,
+.active:before{
     content:"";
     position: absolute;
     background-image: url(../img/catalog-arrow-black.png);
     width: 7px;
     height: 11px;
-    top: 0;
+    top: 5px;
     left: 0;
 }
 
@@ -1165,7 +1167,7 @@ footer .main-menu a:focus {
     margin-right: 0;
 }
 
-.catolog-paginator .active {
+.catolog-paginator .active-page {
     background-color: #354b60;
     color: #fff;
     border-radius: 5px;
