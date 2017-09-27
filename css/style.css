@@ -7,6 +7,7 @@
 body {
     font-family: "PT Sans", "Arial", sans-serif;
     min-width: 960px;
+    height: 100%;
 }
 
 .maket {
@@ -26,12 +27,21 @@ body {
     overflow: auto;
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 
 /* ..............................................Хэдер и Футер.............................................*/
 
 header {
     background-color: #ffcd34;
     font-size: 0;
+}
+
+main{
 }
 
 footer {
@@ -78,6 +88,7 @@ footer {
     font-size: 16px;
     color: #000;
     margin-right: 4px;
+    padding: 0 1%;
 }
 
 footer .main-menu>li {
@@ -86,7 +97,7 @@ footer .main-menu>li {
 
 .main-menu li:last-child {
     margin-right: 0px;
-    margin-left: 8px;
+    margin-left: 3px;
 }
 
 .main-menu a {
@@ -96,7 +107,6 @@ footer .main-menu>li {
     vertical-align: middle;
     border: 2px solid transparent;
     line-height: 0;
-    padding: 20px 15px 15px;
 }
 
 .main-menu a:hover {
@@ -839,6 +849,7 @@ footer .main-menu a:focus {
 
 .contacts-info textarea {
     margin: 0;
+    width: 100%;
 }
 
 .contacts-info button {
@@ -846,6 +857,8 @@ footer .main-menu a:focus {
     font-size: 18px;
     width: 100%;
     min-height: 45px;
+    border: none;
+    color: #fff;
 }
 
 .review-main {
@@ -1121,7 +1134,7 @@ footer .main-menu a:focus {
     text-decoration: none;
     vertical-align: top;
     text-align: center;
-    padding-top: 5px;
+    padding: 3%;
 }
 
 .catolog-rent,
